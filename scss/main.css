@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
   scroll-behavior: smooth;
 }
 
@@ -21,7 +22,6 @@ header {
 
 a {
   color: white;
-  text-decoration: none;
 }
 
 .article-text {
@@ -44,6 +44,7 @@ a {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -58,26 +59,36 @@ h4 {
 .textarea {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: lightgrey;
-  border-radius: 25px;
+  border-radius: 20px;
   height: 100px;
+  width: 315px;
+  padding: 30px;
   margin: 20px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn--contact {
   display: flex;
   justify-items: center;
-  height: 60px;
+  margin: 25px;
+  border-radius: 50%;
   text-align: center;
-  color: black;
+  box-shadow: 0px 5px 40px black;
+  background-color: black;
 }
 
 img {
   max-height: 30vh;
   border-radius: 50%;
   box-shadow: 0px 5px 40px grey;
-  -moz-border-radius: 190px;
-  -webkit-border-radius: 190px;
 }
 
 footer {
