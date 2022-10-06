@@ -1,0 +1,55 @@
+header {
+    background-image: url("/assets/negative-space-black-forest-dawn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+   // justify-content: center;
+}
+
+   .nav-bar {
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+   .article-text {
+    align-self: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+} 
+
+.btn {
+    height: 60px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //article {
+        //justify-content: space-evenly;
+       // margin: 10px;
+    //}

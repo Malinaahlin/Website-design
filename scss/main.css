@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("/assets/negative-space-black-forest-dawn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.article-text {
+  align-self: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  height: 60px;
+  text-align: center;
+  color: white;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.textarea {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  border-radius: 25px;
+  height: 100px;
+  margin: 20px;
+}
+
+.btn--contact {
+  display: flex;
+  justify-items: center;
+  height: 60px;
+  text-align: center;
+  color: black;
+}
+
+img {
+  max-height: 30vh;
+  border-radius: 50%;
+  box-shadow: 0px 5px 40px grey;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
