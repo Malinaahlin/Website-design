@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  outline: 0;
   font-family: "Times New Roman", Times, serif;
   scroll-behavior: smooth;
 }
@@ -15,9 +16,94 @@ header {
   flex-direction: column;
 }
 
-.nav-bar {
-  flex-direction: row;
-  align-self: flex-end;
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  padding: 0 10%;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.102);
+}
+
+nav .nav-list {
+  display: flex;
+}
+
+nav .nav-list .nav-item {
+  cursor: pointer;
+  height: 100%;
+  padding: 0 30px;
+  transition: 0.4s;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0 25rem;
+  }
+  nav .nav-list .nav-item {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav-list {
+    display: grid;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.102);
+    margin-right: 12%;
+    width: 40%;
+    transform: translateY(-150%);
+    transition: 0.6s;
+  }
+  nav .nav-list .nav-item {
+    padding-left: 35px;
+  }
+  nav .navbar-toggler {
+    display: grid !important;
+  }
+}
+nav .navbar-toggler {
+  display: none;
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 10%;
+  transition: 0.4s;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ nav .nav-list {
+  transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+  margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+  display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 a {
@@ -30,6 +116,7 @@ a {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: white;
+  font-size: x-large;
 }
 
 .btn {

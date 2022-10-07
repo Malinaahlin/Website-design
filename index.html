@@ -12,15 +12,28 @@
     <div class="container">
       <!-- Startpage -->
       <header id="#Home">
-        <div class="nav-bar">
+       <div class="nav-bar"> 
+          <input type="checkbox" id="toggle">
           <nav>
-            <ul class="menu">
-              <li><a href="#Home">Hem</a></li>
-              <li><a href="#about">Om</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+            <label class="navbar-toggler" for="toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#Home" class="nav-link">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Om</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Kontakt</a>
+              </li>
             </ul>
           </nav>
-        </div>
+       </div> 
         <div class="article-text">
           <article>
             <h1>Welcome to nature</h1>
@@ -35,7 +48,7 @@
             <a href="#about">
               <span class="fa-solid fa-circle-arrow-down fa-2x"></span>
             </a>
-        </div>
+        </div> 
       </header>
       <!-- About us -->
       <section id="about">
