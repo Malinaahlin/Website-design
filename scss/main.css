@@ -207,11 +207,19 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 30px;
 }
 
 p {
   font-family: "Times New Roman", Times, serif;
   color: white;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
