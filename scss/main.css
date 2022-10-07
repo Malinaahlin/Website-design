@@ -42,7 +42,7 @@ nav .nav-list .nav-item {
 
 @media (min-width: 768px) {
   nav {
-    padding: 0 25rem;
+    padding-right: 0px;
   }
   nav .nav-list .nav-item {
     padding: 0 20px;
@@ -173,11 +173,34 @@ h4 {
 }
 
 img {
-  max-height: 30vh;
+  height: 30vh;
   border-radius: 50%;
   box-shadow: 0px 5px 40px grey;
 }
 
+@media (min-width: 768px) {
+  h2 {
+    margin-bottom: 0px;
+  }
+  h4 {
+    font-size: x-large;
+  }
+  img {
+    height: 45vh;
+  }
+  .box {
+    display: flex;
+  }
+  .first-section {
+    display: flex;
+  }
+  .person {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
 footer {
   background-color: black;
   display: flex;

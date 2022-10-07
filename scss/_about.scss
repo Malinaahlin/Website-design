@@ -49,37 +49,47 @@ h4 {
 
 
 img {
-    max-height: 30vh;
+    height: 30vh;
     border-radius: 50%;
     box-shadow: 0px 5px 40px grey;
     
 }
 
-// .box {
-//     display: flex;
-//     justify-content: center;
-//     justify-content: space-evenly;
-//     flex-direction: column;
-//     align-items: center;
-// }
+@media (min-width: 768px) {
 
+    h2 {
+        margin-bottom: 0px;
+    }
 
+    h4 {
+        font-size: x-large;
+    }
 
-// #first-section {
-//     display: flex;
-//     flex-direction: column;
-//     //justify-content: center;
-//     justify-content: space-evenly;
-//     align-items: center;
+    img {
+        height: 45vh;
+    }
+    
+    .box {
+        display: flex;
+        
+        
+    }
+    
+    .first-section {
+        display: flex;
 
-// }
+    }
 
-// #second-section {
-//     display: flex;
-//     flex-direction: column;
-//     //justify-content: center;
-//     justify-content: space-evenly;
-//     align-items: center;
-// }
+    .person {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 70px;
+        padding-left: 70px;
+        }
+
+    
+
+}
+
 
 
